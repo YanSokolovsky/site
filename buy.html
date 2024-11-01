@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Покупка компьютера</title>
+    <link rel="stylesheet" href="styles_buy.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Покупка компьютера</h1>
+        <nav>
+            <ul>
+                <li><a href="main.html">Главная</a></li>
+                <li><a href="buy.html">Покупка компьютера</a></li>
+                <li><a href="repair.html">Ремонт компьютера</a></li>
+                <li><a href="software.html">Установка ПО</a></li>
+                <li><a href="status.html">Проверка состояния заказа</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="filters">
+            <h2>Фильтры поиска</h2>
+            <form>
+                <label for="type">Тип компьютера:</label>
+                <select id="type" name="type">
+                    <option value="servers">Серверы</option>
+                    <option value="desktops">Настольные</option>
+                    <option value="laptops">Портативные</option>
+                    <option value="handhelds">Карманные</option>
+                </select>
+                <label for="price">Цена:</label>
+                <input type="number" id="price" name="price" placeholder="Максимальная цена">
+                <label for="manufacturer">Производитель:</label>
+                <input type="text" id="manufacturer" name="manufacturer" placeholder="Производитель">
+                <button type="submit">Применить фильтры</button>
+            </form>
+        </section>
+        <section class="products">
+            <h2>Список компьютеров</h2>
+            <div class="product-card">
+                <img src="images/dell_poweredge.jpg" alt="Сервер">
+                <h3>Сервер Dell PowerEdge</h3>
+                <p>Высокопроизводительный сервер для бизнеса</p>
+                <p>Цена: 1000$</p>
+                <button onclick="addToCart('Сервер Dell PowerEdge', 1000)">Добавить в корзину</button>
+            </div>
+            <div class="product-card">
+                <img src="images/asus.jpg" alt="Настольный компьютер">
+                <h3>Настольный компьютер ASUS</h3>
+                <p>Надежный настольный компьютер для дома и офиса</p>
+                <p>Цена: 700$</p>
+                <button onclick="addToCart('Настольный компьютер HP', 700)">Добавить в корзину</button>
+            </div>
+            <div class="product-card">
+                <img src="images/lenovo.jpg" alt="Портативный компьютер">
+                <h3>Ноутбук Lenovo</h3>
+                <p>Мощный ноутбук для работы и развлечений</p>
+                <p>Цена: 800$</p>
+                <button onclick="addToCart('Ноутбук Lenovo', 800)">Добавить в корзину</button>
+            </div>
+            <div class="product-card">
+                <img src="images/raspberry.png" alt="Карманный компьютер">
+                <h3>Карманный компьютер Raspberry Pi</h3>
+                <p>Компактный и универсальный карманный компьютер</p>
+                <p>Цена: 50$</p>
+                <button onclick="addToCart('Карманный компьютер Raspberry Pi', 50)">Добавить в корзину</button>
+            </div>
+        </section>
+        <section class="cart">
+            <h2>Корзина</h2>
+            <ul id="cart-items"></ul>
+            <p>Общая сумма: <span id="total-price">0</span>$</p>
+            <button onclick="checkout()">Оформить заказ</button>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Предприятие по продаже и ремонту компьютеров. Все права защищены.</p>
+    </footer>
+</body>
+</html>

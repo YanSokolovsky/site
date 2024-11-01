@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа</title>
+    <link rel="stylesheet" href="styles_checkout.css">
+    <script src="scripts_checkout.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Оформление заказа</h1>
+        <nav>
+            <ul>
+                <li><a href="main.html">Главная</a></li>
+                <li><a href="buy.html">Покупка компьютера</a></li>
+                <li><a href="repair.html">Ремонт компьютера</a></li>
+                <li><a href="software.html">Установка ПО</a></li>
+                <li><a href="status.html">Проверка состояния заказа</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="checkout-form">
+            <h2>Форма заказа</h2>
+            <form id="checkoutForm">
+                <label for="address">Адрес доставки/получения товара:</label>
+                <input type="text" id="address" name="address" placeholder="Введите адрес" required>
+                
+                <label for="paymentMethod">Способ оплаты:</label>
+                <select id="paymentMethod" name="paymentMethod" required>
+                    <option value="cash">Наличные курьеру</option>
+                    <option value="bankTransfer">Банковский перевод</option>
+                </select>
+                
+                <label for="paymentDetails">Детали оплаты:</label>
+                <textarea id="paymentDetails" name="paymentDetails" rows="4" placeholder="Введите детали оплаты" required></textarea>
+                
+                <button type="submit">Подтвердить заказ</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Предприятие по продаже и ремонту компьютеров. Все права защищены.</p>
+    </footer>
+</body>
+</html>

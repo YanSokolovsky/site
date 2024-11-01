@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="styles_contacts.css">
+</head>
+<body>
+    <header>
+        <h1>Ремонт компьютера</h1>
+        <nav>
+            <ul>
+                <li><a href="main.html">Главная</a></li>
+                <li><a href="buy.html">Покупка компьютера</a></li>
+                <li><a href="repair.html">Ремонт компьютера</a></li>
+                <li><a href="software.html">Установка ПО</a></li>
+                <li><a href="status.html">Проверка состояния заказа</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Контакты</h1>
+    <section>
+        <h2>Контактная информация</h2>
+        <p><strong>Адрес:</strong> ул. Примерная, д. 1, г. Минск, Беларусь</p>
+        <p><strong>Телефон:</strong> +375 (29) 123-45-67</p>
+        <p><strong>Email:</strong> info@example.com</p>
+    </section>
+    <section>
+        <h2>Форма обратной связи</h2>
+        <form action="/send-message" method="post">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" required></textarea>
+            <br>
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+    <footer>
+        <p1>© 2024 Предприятие по продаже и ремонту компьютеров. Все права защищены.</p1>
+    </footer>
+</body>
+</html>

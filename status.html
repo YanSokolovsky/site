@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проверка состояния заказа</title>
+    <link rel="stylesheet" href="styles_status.css">
+    <script src="scripts_status.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Проверка состояния заказа</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="buy.html">Покупка компьютера</a></li>
+                <li><a href="repair.html">Ремонт компьютера</a></li>
+                <li><a href="software.html">Установка ПО</a></li>
+                <li><a href="status.html">Проверка состояния заказа</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="status-form">
+            <h2>Форма проверки состояния заказа</h2>
+            <form id="statusForm">
+                <label for="orderNumber">Номер заказа:</label>
+                <input type="text" id="orderNumber" name="orderNumber" placeholder="Введите номер заказа">
+                <button type="submit">Проверить состояние</button>
+            </form>
+            <div id="orderStatus"></div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Предприятие по продаже и ремонту компьютеров. Все права защищены.</p>
+    </footer>
+</body>
+</html>
