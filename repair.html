@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ремонт компьютера</title>
     <link rel="stylesheet" href="styles_repair.css">
-    <script src="scripts_repair.js" defer></script>
+    <script src="repair.js" defer></script>
 </head>
+
 <body>
     <header>
         <h1>Ремонт компьютера</h1>
@@ -16,6 +18,7 @@
                 <li><a href="buy.html">Покупка компьютера</a></li>
                 <li><a href="repair.html">Ремонт компьютера</a></li>
                 <li><a href="software.html">Установка ПО</a></li>
+                <li><a href="checkout.html">Корзина</a></li>
                 <li><a href="status.html">Проверка состояния заказа</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
             </ul>
@@ -31,7 +34,8 @@
                     <option value="software">Программный</option>
                 </select>
                 <label for="problemDescription">Описание проблемы:</label>
-                <textarea id="problemDescription" name="problemDescription" rows="4" placeholder="Опишите проблему"></textarea>
+                <textarea id="problemDescription" name="problemDescription" rows="4"
+                    placeholder="Опишите проблему"></textarea>
                 <label for="deliveryOption">Варианты доставки:</label>
                 <select id="deliveryOption" name="deliveryOption">
                     <option value="self">Привезти самостоятельно</option>
@@ -47,4 +51,5 @@
         <p>© 2024 Предприятие по продаже и ремонту компьютеров. Все права защищены.</p>
     </footer>
 </body>
+
 </html>

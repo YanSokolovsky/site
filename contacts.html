@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты</title>
     <link rel="stylesheet" href="styles_contacts.css">
+    <script src="contacts.js" defer></script>
 </head>
+
 <body>
     <header>
         <h1>Ремонт компьютера</h1>
@@ -15,6 +18,7 @@
                 <li><a href="buy.html">Покупка компьютера</a></li>
                 <li><a href="repair.html">Ремонт компьютера</a></li>
                 <li><a href="software.html">Установка ПО</a></li>
+                <li><a href="checkout.html">Корзина</a></li>
                 <li><a href="status.html">Проверка состояния заказа</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
             </ul>
@@ -29,7 +33,7 @@
     </section>
     <section>
         <h2>Форма обратной связи</h2>
-        <form action="/send-message" method="post">
+        <form id="contactForm">
             <label for="name">Имя:</label>
             <input type="text" id="name" name="name" required>
             <br>
@@ -43,7 +47,8 @@
         </form>
     </section>
     <footer>
-        <p1>© 2024 Предприятие по продаже и ремонту компьютеров. Все права защищены.</p1>
+        <p>© 2024 Предприятие по продаже и ремонту компьютеров. Все права защищены.</p>
     </footer>
 </body>
+
 </html>

@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Установка ПО</title>
     <link rel="stylesheet" href="styles_software.css">
-    <script src="scripts_software.js" defer></script>
+    <script src="software.js" defer></script>
 </head>
+
 <body>
     <header>
         <h1>Установка ПО</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Главная</a></li>
+                <li><a href="main.html">Главная</a></li>
                 <li><a href="buy.html">Покупка компьютера</a></li>
                 <li><a href="repair.html">Ремонт компьютера</a></li>
                 <li><a href="software.html">Установка ПО</a></li>
+                <li><a href="checkout.html">Корзина</a></li>
                 <li><a href="status.html">Проверка состояния заказа</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
             </ul>
@@ -26,19 +29,19 @@
             <h2>Форма заказа установки ПО</h2>
             <form id="softwareForm">
                 <label for="software">Выбор ПО:</label>
-                <select id="software" name="software">
+                <select id="software" name="software" required>
                     <option value="windows">Windows 10</option>
                     <option value="office">Microsoft Office</option>
                     <option value="antivirus">Антивирус</option>
                     <option value="photoshop">Adobe Photoshop</option>
                 </select>
                 <label for="deliveryOption">Варианты доставки:</label>
-                <select id="deliveryOption" name="deliveryOption">
+                <select id="deliveryOption" name="deliveryOption" required>
                     <option value="self">Привезти самостоятельно</option>
                     <option value="courier">Заказать курьера</option>
                 </select>
                 <label for="contactInfo">Контактная информация:</label>
-                <input type="text" id="contactInfo" name="contactInfo" placeholder="Ваше имя и телефон">
+                <input type="text" id="contactInfo" name="contactInfo" placeholder="Ваше имя и телефон" required>
                 <button type="submit">Отправить заявку</button>
             </form>
         </section>
@@ -47,4 +50,5 @@
         <p>© 2024 Предприятие по продаже и ремонту компьютеров. Все права защищены.</p>
     </footer>
 </body>
+
 </html>

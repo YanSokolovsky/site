@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Покупка компьютера</title>
     <link rel="stylesheet" href="styles_buy.css">
-    <script src="scripts.js" defer></script>
+    <script src="buy.js" defer></script>
 </head>
+
 <body>
     <header>
         <h1>Покупка компьютера</h1>
@@ -16,6 +18,7 @@
                 <li><a href="buy.html">Покупка компьютера</a></li>
                 <li><a href="repair.html">Ремонт компьютера</a></li>
                 <li><a href="software.html">Установка ПО</a></li>
+                <li><a href="checkout.html">Корзина</a></li>
                 <li><a href="status.html">Проверка состояния заказа</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
             </ul>
@@ -53,7 +56,7 @@
                 <h3>Настольный компьютер ASUS</h3>
                 <p>Надежный настольный компьютер для дома и офиса</p>
                 <p>Цена: 700$</p>
-                <button onclick="addToCart('Настольный компьютер HP', 700)">Добавить в корзину</button>
+                <button onclick="addToCart('Настольный компьютер ASUS', 700)">Добавить в корзину</button>
             </div>
             <div class="product-card">
                 <img src="images/lenovo.jpg" alt="Портативный компьютер">
@@ -81,4 +84,5 @@
         <p>© 2024 Предприятие по продаже и ремонту компьютеров. Все права защищены.</p>
     </footer>
 </body>
+
 </html>
